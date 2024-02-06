@@ -285,7 +285,7 @@ body {
     position: absolute;
     left: -100%;
     top: var(--header-main-height);
-    height: calc(100vh - var(--header-main-height));
+    height: calc(100dvh - var(--header-main-height));
     z-index: 100;
     width: 100%;
     background-color: var(--background-color);
