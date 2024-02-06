@@ -4,6 +4,7 @@ const Rating = ({ setRating, rating }) => {
 
 
     const [hover, setHover] = React.useState(null)
+    const [tempRating, setTempRating] = React.useState(null)
 
     const ratingBackground = [...Array(11)].map((item, index) => {
         return (
@@ -16,21 +17,31 @@ const Rating = ({ setRating, rating }) => {
         )
     })
     const ratingElements = [...Array(100)].map((item, index) => {
-        // const currentRating = index > 0 ? index / 10 : null;
-        const currentRating = index / 10;
-        let tempRating = rating;
-        return (
-            
-            <label key={index}
+        const currentIndex = index + 1;
+        const currentRating = currentIndex / 10;
 
-                onClick={() => setRating(currentRating)}
-                onMouseEnter={() => setHover(currentRating)}
+
+        return (
+
+            <label key={currentIndex}
+
+                onClick={() => {
+                    setRating(currentRating);
+                    setTempRating(currentRating)
+                }
+                }
+                onMouseEnter={() => {
+                    setHover(currentRating);
+                    setTempRating(null);
+                }
+                }
                 onMouseLeave={() => {
-                    setHover(null)
+                    setHover(null);
+                    setTempRating(rating);
                 }
                 }
-                className={`rating__item ${index / 10 <= rating || index / 10 <= hover ? '_active' : ''}`}>
-                <input type="radio" value={index / 10} className="rating__btn" id="rating" />
+                className={`rating__item ${currentIndex / 10 <= tempRating || currentIndex / 10 <= hover ? '_active' : ''}`}>
+                <input type="radio" value={currentIndex / 10} className="rating__btn" id="rating" />
 
 
             </label>

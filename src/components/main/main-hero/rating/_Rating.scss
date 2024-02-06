@@ -12,6 +12,7 @@
         background: var(--background-gradient-red);
         border-radius: 17px;
         &-item {
+            cursor: pointer;
             position: relative;
             flex: 0 0 20px;
 
@@ -25,12 +26,12 @@
 
        
 
-        &:first-child {
-            flex: 0 0 50px;
-        }
-        &:last-child {
-            flex: 0 0 30px;
-        }
+        // &:first-child {
+        //     flex: 0 0 50px;
+        // }
+        // &:last-child {
+        //     flex: 0 0 30px;
+        // }
 
            
         }
