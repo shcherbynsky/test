@@ -293,6 +293,8 @@ body {
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: stretch;
+    gap: 30px;
+    overflow-y: auto;
     transition: left 0.3s;
   }
   .header-main__body._opened {
