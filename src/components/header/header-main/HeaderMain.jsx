@@ -104,9 +104,10 @@ const HeaderMain = ({ theme }) => {
                         </button>
                     </div>
                 </div>
-                <button onClick={()=> onMenuIconClick()} className="header-main__icon">
+                <button aria-labelledby="main-menu" onClick={()=> onMenuIconClick()} className="header-main__icon">
                     <BurgerIcon width={25} height={20} color={'blue'} isOpened={menuOpened}/>
                 </button>
+                <span id="main-menu" className="hide">Main menu</span>
             </nav>
         </div>
     )

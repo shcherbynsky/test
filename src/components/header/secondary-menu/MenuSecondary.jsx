@@ -34,7 +34,7 @@ const MenuSecondary = ({classTitle, secondaryMenuLinkRef}) => {
         return (
           <li key={index} ref={secondaryMenuLinkRef} className='menu-secondary__item'>
             <a href="!#" className='menu-secondary__link'>
-              <img src={item.icon} className='menu-secondary__icon' href="#!"></img>
+              <img src={item.icon} className='menu-secondary__icon' href="#!" alt='menu icon'></img>
               <span className='menu-secondary__title' href="#!">{item.title}</span>
             </a>
           </li>

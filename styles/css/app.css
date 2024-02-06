@@ -99,6 +99,10 @@ body {
   overflow: hidden;
 }
 
+.hide {
+  display: none;
+}
+
 :root {
   --background-gradient: linear-gradient(90deg, rgba(13, 208, 186, 1) 25%, rgba(42, 134, 229, 1) 75%);
   --background-gradient-red: linear-gradient(90deg, rgba(220,74,25,1) 25%, rgba(252,197,57,1) 75%);
@@ -127,7 +131,7 @@ body {
 :root {
   --main-white: #ffffff;
   --main-color: #707070;
-  --article-info-color: #B3B3B1;
+  --article-info-color: #797979;
   --background-color: #ffffff;
   --background-article: #fff;
   --background-footer: #fff;
@@ -495,12 +499,21 @@ body {
   flex-direction: column;
 }
 .item-similar__img {
+  position: relative;
+  padding-bottom: 49.279%;
   cursor: pointer;
   margin-bottom: 18px;
   border-radius: 20px;
   overflow: hidden;
 }
 .item-similar__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: 0.3s;
 }
 @media (any-hover: hover) {
