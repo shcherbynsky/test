@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:regular,500,700,800,900,italic&display=swap);
+
+body {
+    position: relative;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+[class*="__container"] {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+._locked {
+    overflow: hidden;
+}

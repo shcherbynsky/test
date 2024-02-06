@@ -1,0 +1,12 @@
+@import './main-body/MainBody';
+@import './main-content/MainContent';
+@import './main-aside/MainAside.scss';
+
+.main {
+    background-color: var(--background-main);
+    padding-bottom: 60px;
+    // .main__hero
+
+    &__hero {
+    }
+}
