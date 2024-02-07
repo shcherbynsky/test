@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import MenuSecondary from '../secondary-menu/MenuSecondary'
 
 
@@ -77,7 +77,8 @@ const HeaderTop = ({toggleTheme}) => {
         </div>
         <div className='headertop__toggletheme toggletheme'>
           <input onChange={toggleTheme} type="checkbox" className="toggletheme__btn" id="toggletheme__btn" />
-          <label htmlFor="toggletheme__btn" className="toggletheme__label"></label>
+          <label htmlFor="toggletheme__btn" className="toggletheme__label">
+          </label>
         </div>
       </div>
     </div>

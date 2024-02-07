@@ -51,7 +51,6 @@
         margin-left: unset;
         margin-right: auto;
     }
-
     // .socials-headertop__items
 
     &__items {
@@ -83,16 +82,15 @@
 
     &__icon {
         transition: .3s;
-
         @media (any-hover: hover) {
             &:hover {
-                transform: rotate(360deg);
-            }
-        }
+             
+                    transform: rotate(360deg);
+        }}
 
+      
 
-
-
+        
     }
 }
 
@@ -138,14 +136,14 @@
 
 .dark .toggletheme {
 
-
+   
 
     // .toggletheme__label
 
     &__label {
-
+       
         background-color: #183A5D;
-
+       
 
         &::before {
             transform: translateX(22px);
