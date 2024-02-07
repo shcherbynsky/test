@@ -3,7 +3,7 @@ import MenuSecondary from '../secondary-menu/MenuSecondary'
 
 
 
-const HeaderTop = ({ toggleTheme, theme }) => {
+const HeaderTop = ({toggleTheme}) => {
 
 
 

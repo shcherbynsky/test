@@ -5,7 +5,7 @@ import BurgerIcon from '../../burger/Burger'
 
 const HeaderMain = ({ theme }) => {
 
-    const menuBottomItems = [
+    const menuItems = [
         {
             title: 'Item',
             url: '',
@@ -52,6 +52,8 @@ const HeaderMain = ({ theme }) => {
     React.useEffect(() => {
         const body = document.getElementsByTagName("body")[0];
        
+
+        // close menu when click logo, searchNutton or links
         menuOpened ? body.classList.add('_locked') : body.classList.remove('_locked')
 
         const handleClickOutsideModal = (e) => {
@@ -72,7 +74,9 @@ const HeaderMain = ({ theme }) => {
         }
     }, [menuOpened])
 
-    const menuBottomElements = menuBottomItems.map((item, index) => {
+
+    // mapping menu links
+    const menuElements = menuItems.map((item, index) => {
         return (
             <li key={index} ref={mainMenuLinkRef} className="menu-header-main__item">
                 <a href={item.url} className="menu-header-main__link">{item.title}</a>
@@ -80,6 +84,7 @@ const HeaderMain = ({ theme }) => {
         )
     })
 
+    
     const onMenuIconClick = () => {
         isMenuOpend(!menuOpened)
     }
@@ -94,7 +99,7 @@ const HeaderMain = ({ theme }) => {
                     <MenuSecondary classTitle={'header-main__menu-secondary'} secondaryMenuLinkRef={secondaryMenuLinkRef}/>
                     <div className="header-main__menu menu-header-main">
                         <ul className="menu-header-main__items">
-                            {menuBottomElements}
+                            {menuElements}
                         </ul>
                     </div>
                     <div className="search">

@@ -22,18 +22,7 @@
 
             font-size: 12px;
             font-weight: 700;
-            color: #fff;
-
-       
-
-        // &:first-child {
-        //     flex: 0 0 50px;
-        // }
-        // &:last-child {
-        //     flex: 0 0 30px;
-        // }
-
-           
+            color: #fff;     
         }
     }
 
@@ -46,15 +35,11 @@
         width: calc(100% - 50px);
         height: 100%;
         z-index: 10;
-        // width: 269px;
-        // height: 35px;
         border-radius: 0 17px 17px 0;
         overflow: hidden;
 
         display: flex;
         align-items: stretch;
-
-        // background: var(--background-gradient-red);
     }
 
     // .rating__item
@@ -65,7 +50,6 @@
         position: relative;
         font-size: 12px;
         font-weight: 700;
-        // color: #707070;
         background-color: #EBF6F5;
         transition: .3s;
 

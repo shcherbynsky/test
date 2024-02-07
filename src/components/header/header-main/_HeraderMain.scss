@@ -10,17 +10,9 @@
     // .header-main__container
 
     &__container {
-        
-        // padding-top: 31px;
-        // padding-bottom: 31px;
         display: flex;
         align-items: center;
         gap: clamp(40px, 2vw, 61px);
-
-        // @media (max-width: 768px) {
-        //     padding-top: 21px;
-        // padding-bottom: 21px;
-        // }
     }
 
     // .header-main__logo
@@ -90,12 +82,11 @@
 .menu-header-main {
     flex: 1 1 auto;
     color: var(--link-color);
-    // margin-right: auto;
+
     // .menu-header-main__items
 
     &__items {
         display: flex;
-        // flex-wrap: wrap;
         align-items: center;
         column-gap: 28px;
 
@@ -133,7 +124,6 @@
     }
 }
 .search {
-    // max-width: 175px;
     height: 42px;
     background-color: var(--background-search);
     
@@ -162,9 +152,6 @@
             color: var(--color-search);
         }
 
-        // @media (min-width: 870px) {
-        //     width: clamp(20px, 10vw, 148px);
-        // }
     }
 
     // .search__icon

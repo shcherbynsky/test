@@ -6,6 +6,9 @@ const Rating = ({ setRating, rating }) => {
     const [hover, setHover] = React.useState(null)
     const [tempRating, setTempRating] = React.useState(null)
 
+
+
+    // mapping backround Note 1 2 3 4 5 6 7 8 9 10
     const ratingBackground = [...Array(11)].map((item, index) => {
         return (
 
@@ -16,6 +19,8 @@ const Rating = ({ setRating, rating }) => {
 
         )
     })
+
+    // mapping rating elements from 0.1 to 10
     const ratingElements = [...Array(100)].map((item, index) => {
         const currentIndex = index + 1;
         const currentRating = currentIndex / 10;

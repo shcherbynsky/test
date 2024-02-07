@@ -1,6 +1,8 @@
 @import './main-body/MainBody';
 @import './main-content/MainContent';
-@import './main-aside/MainAside.scss';
+@import './main-aside/MainAside';
+@import './main-hero/MainHero';
+@import './main-hero/rating/Rating';
 
 .main {
     background-color: var(--background-main);
